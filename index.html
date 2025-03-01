@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,46 +10,92 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script>
+        // Add dark mode support to Tailwind config
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    <style>
+        /* Transition styles for smooth theme switching */
+        .transition-colors {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-sm z-50 transition-colors">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-xl font-bold text-gray-800">Pyae's Portfolio Space</a>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
-                    <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
-                    <a href="#skills" class="text-gray-600 hover:text-blue-600">Skills</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="#" class="text-xl font-medium text-gray-800 dark:text-white transition-colors">Pyae's Portfolio
+                    Space</a>
+                <div class="flex items-center">
+                    <div class="hidden md:flex space-x-6 mr-6">
+                        <a href="#about"
+                            class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+                        <a href="#experience"
+                            class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+                        <a href="#skills"
+                            class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
+                        <a href="#contact"
+                            class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+                    </div>
+                    <!-- Dark/Light Mode Toggle -->
+                    <button id="theme-toggle"
+                        class="p-2 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white focus:outline-none">
+                        <i id="theme-toggle-dark-icon" class="fa-solid fa-moon hidden"></i>
+                        <i id="theme-toggle-light-icon" class="fa-solid fa-sun"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-20 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <section
+        class="pt-20 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Pyae Phyo Aung</h1>
-                <p class="text-xl text-gray-600 mb-8">Senior Web Developer</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4 transition-colors">
+                    Pyae Phyo Aung
+                    <sup>
+                        <span id="speaker-icon"
+                            class="text-lg cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+                            <i class="fas fa-volume-up"></i>
+                        </span>
+                    </sup>
+                </h1>
+                <audio id="audio" src="data/pyaephyoaung.m4a" style="display: none;"></audio>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors">Senior Web Developer</p>
                 <div class="flex justify-center space-x-4 mb-8">
-                    <a href="mailto:work.pyaephyoeaung@gmail.com" class="text-gray-600 hover:text-blue-600">
+                    <a href="mailto:work.pyaephyoeaung@gmail.com"
+                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                         <i class="fas fa-envelope text-xl"></i>
                     </a>
                     <a href="https://github.com/PyaePhyoeAungppa" target="_blank"
-                        class="text-gray-600 hover:text-blue-600">
+                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                         <i class="fab fa-github text-xl"></i>
                     </a>
                     <a href="https://linkedin.com/in/pyae-phyo-aung-3a43371aa" target="_blank"
-                        class="text-gray-600 hover:text-blue-600">
+                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
                 </div>
                 <a href="data/pyaephyoeaung-developer.pdf" download="pyaephyoeaung-developer.pdf"
-                    class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition duration-150 ease-in-out">
+                    class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg transition duration-150 ease-in-out">
                     <i class="fas fa-download mr-2"></i>
                     Download Resume
                 </a>
@@ -58,11 +104,11 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
+    <section id="about" class="py-16 bg-white dark:bg-gray-800 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
-                <p class="text-gray-600 leading-relaxed">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6 transition-colors">About Me</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                     Results-driven Senior Web Developer with 7+ years of experience delivering scalable and optimized
                     web solutions.
                     Proficient in leading projects from conception to deployment, collaborating across teams, and
@@ -75,67 +121,84 @@
 
     <!-- Experience Section -->
     <!-- Featured Projects Section (Add this after About section) -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured Projects</h2>
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Featured Projects
+                </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                    <a href="https://swiftwriter.ai" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">SwiftWriter</h3>
-                        <p class="text-gray-600">AI-powered content creation platform</p>
-                    </a>
-
                     <a href="https://dhonepyandeliveryservice.com" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dhone Pyan Delivery</h3>
-                        <p class="text-gray-600">Logistics and delivery tracking platform</p>
-                    </a>
-
-                    <a href="https://yinyinkyaw.com" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Yin Yin Kyaw</h3>
-                        <p class="text-gray-600">Company Website for Internationl Trading Company</p>
-                    </a>
-
-                    <a href="https://smartsales.asia" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Sales</h3>
-                        <p class="text-gray-600">Advanced POS system with comprehensive features</p>
-                    </a>
-
-                    <a href="https://mbccentre.com" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">MBC Centre</h3>
-                        <p class="text-gray-600">Comprehensive business management solution</p>
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Dhone
+                            Pyan Delivery</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Logistics and delivery tracking
+                            platform</p>
                     </a>
 
                     <a href="https://officepromm.web.app" target="_blank"
-                        class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Office Pro</h3>
-                        <p class="text-gray-600">Mini ERP system for streamlined business operations</p>
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Office
+                            Pro</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Mini ERP system for streamlined
+                            business operations</p>
                     </a>
+
+                    <a href="https://yinyinkyaw.com" target="_blank"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Yin Yin
+                            Kyaw</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Company Website for Internationl
+                            Trading Company</p>
+                    </a>
+
+                    <a href="https://smartsales.asia" target="_blank"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Smart
+                            Sales</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Advanced POS system with
+                            comprehensive features</p>
+                    </a>
+
+                    <a href="https://mbccentre.com" target="_blank"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">MBC
+                            Centre</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Comprehensive business management
+                            solution</p>
+                    </a>
+
+                    <a href="https://swiftwriter.ai" target="_blank"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">
+                            SwiftWriter</h3>
+                        <p class="text-gray-600 dark:text-gray-300 transition-colors">AI-powered content creation
+                            platform</p>
+                    </a>
+
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Updated Experience Section -->
-    <section id="experience" class="py-16 bg-gray-50">
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">Experience</h2>
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Experience</h2>
 
                 <div class="space-y-8">
                     <!-- Growth Automation -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Frontend Developer</h3>
-                            <span class="text-sm text-gray-500">Jan 2024 - Sep 2024</span>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Frontend
+                                Developer</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Jan 2024 - Sep
+                                2024</span>
                         </div>
-                        <h4 class="text-gray-600 mb-3">Growth Automation | Bangkok, Thailand</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Growth Automation | Bangkok,
+                            Thailand</h4>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
                             <li>Spearheaded the design and development of a high-conversion landing page for SwiftWriter
                                 using Next.js</li>
                             <li>Built an intuitive, responsive UI for SwiftWriter's AI-powered platform</li>
@@ -144,13 +207,16 @@
                     </div>
 
                     <!-- Dream Desk -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer</h3>
-                            <span class="text-sm text-gray-500">Apr 2021 - Jan 2024</span>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Full Stack
+                                Developer</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Apr 2021 - Jan
+                                2024</span>
                         </div>
-                        <h4 class="text-gray-600 mb-3">Dream Desk | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Dream Desk | Yangon, Myanmar
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
                             <li>Designed and implemented Office Pro, a mini ERP system, streamlining sales, purchases,
                                 and inventory management</li>
                             <li>Developed Pickup Pro, a delivery tracking system using Laravel and Angular</li>
@@ -160,13 +226,16 @@
                     </div>
 
                     <!-- Code2LAB -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Senior Software Developer</h3>
-                            <span class="text-sm text-gray-500">Oct 2021 - Jan 2024</span>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Senior
+                                Software Developer</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Oct 2021 - Jan
+                                2024</span>
                         </div>
-                        <h4 class="text-gray-600 mb-3">Code2LAB | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Code2LAB | Yangon, Myanmar
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
                             <li>Enhanced Smart Sales POS by implementing client-requested features</li>
                             <li>Upgraded Paymal's cashless payment system, improving campaign functionality</li>
                             <li>Delivered customized clinic and food court management solutions with Ruby on Rails and
@@ -175,13 +244,15 @@
                     </div>
 
                     <!-- MBCSD -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Software Developer</h3>
-                            <span class="text-sm text-gray-500">Jan 2018 - Dec 2020</span>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Software
+                                Developer</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Jan 2018 - Dec
+                                2020</span>
                         </div>
-                        <h4 class="text-gray-600 mb-3">MBCSD | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">MBCSD | Yangon, Myanmar</h4>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
                             <li>Enhanced ERP capabilities in IAIMS using VB 6</li>
                             <li>Developed POS systems for retail and petroleum sectors</li>
                             <li>Built task and KPI management features for workflow optimization</li>
@@ -194,118 +265,128 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-white">
+    <section id="skills" class="py-16 bg-white dark:bg-gray-800 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">Technical Skills</h2>
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Technical Skills
+                </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Languages -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Languages</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Languages
+                        </h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fab fa-php text-gray-400 w-8"></i>
-                                <span class="text-gray-600">PHP</span>
+                                <i class="fab fa-php text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">PHP</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-gem text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Ruby</span>
+                                <i class="fas fa-gem text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Ruby</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fab fa-js text-gray-400 w-8"></i>
-                                <span class="text-gray-600">JavaScript/TypeScript</span>
+                                <i class="fab fa-js text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span
+                                    class="text-gray-600 dark:text-gray-300 transition-colors">JavaScript/TypeScript</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Frameworks -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Frameworks</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">
+                            Frameworks</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fab fa-laravel text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Laravel</span>
+                                <i class="fab fa-laravel text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Laravel</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-train text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Ruby on Rails</span>
+                                <i class="fas fa-train text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Ruby on Rails</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fab fa-react text-gray-400 w-8"></i>
-                                <span class="text-gray-600">React, Next.js</span>
+                                <i class="fab fa-react text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">React, Next.js</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fab fa-bootstrap text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Bootstrap, Tailwind CSS, ShadCN UI</span>
+                                <i class="fab fa-bootstrap text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Bootstrap, Tailwind
+                                    CSS</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Databases -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Databases</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Databases
+                        </h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 w-8"></i>
-                                <span class="text-gray-600">MySQL</span>
+                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">MySQL</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 w-8"></i>
-                                <span class="text-gray-600">PostgreSQL</span>
+                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">PostgreSQL</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 w-8"></i>
-                                <span class="text-gray-600">SQLite</span>
+                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">SQLite</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tools -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Tools</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Tools
+                        </h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fab fa-github text-gray-400 w-8"></i>
-                                <span class="text-gray-600">GitHub, GitLab</span>
+                                <i class="fab fa-github text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">GitHub, GitLab</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-pencil-alt text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Figma</span>
+                                <i class="fas fa-pencil-alt text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Figma</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Other Skills -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Other Skills</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Other
+                            Skills</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fas fa-bolt text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Node.js</span>
+                                <i class="fas fa-bolt text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Node.js</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-code text-gray-400 w-8"></i>
-                                <span class="text-gray-600">jQuery, AJAX</span>
+                                <i class="fas fa-code text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">jQuery, AJAX</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-tools text-gray-400 w-8"></i>
-                                <span class="text-gray-600">ChatGPT, Claude, Gemini, Meta</span>
+                                <i class="fas fa-tools text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">ChatGPT, Claude,
+                                    Gemini, Meta</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Operating Systems -->
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Operating Systems</h3>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Operating
+                            Systems</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fab fa-windows text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Windows</span>
+                                <i class="fab fa-windows text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Windows</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fab fa-linux text-gray-400 w-8"></i>
-                                <span class="text-gray-600">Linux</span>
+                                <i class="fab fa-linux text-gray-400 dark:text-gray-500 w-8"></i>
+                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Linux</span>
                             </div>
                         </div>
                     </div>
@@ -316,19 +397,20 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
+    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">Get in Touch</h2>
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Get in Touch</h2>
                 <div class="space-y-4">
-                    <p class="text-gray-600">
+                    <p class="text-gray-600 dark:text-gray-300 transition-colors">
                         <i class="fas fa-envelope mr-2"></i>
                         <a href="mailto:work.pyaephyoeaung@gmail.com"
-                            class="hover:text-blue-600">work.pyaephyoeaung@gmail.com</a>
+                            class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">work.pyaephyoeaung@gmail.com</a>
                     </p>
-                    <p class="text-gray-600">
+                    <p class="text-gray-600 dark:text-gray-300 transition-colors">
                         <i class="fas fa-phone mr-2"></i>
-                        <a href="tel:+66811128174" class="hover:text-blue-600">+66 811 128 174</a>
+                        <a href="tel:+66811128174"
+                            class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">+66 811 128 174</a>
                     </p>
                 </div>
             </div>
@@ -336,36 +418,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 bg-gray-800 text-gray-400">
+    <footer class="py-8 bg-gray-800 dark:bg-gray-900 text-gray-400 dark:text-gray-500 transition-colors">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Pyae Phyo Aung. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            // Smooth scroll for navigation links
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-
-                var target = $(this.hash);
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 80
-                    }, 500);
-                }
-            });
-
-            // Add shadow to navigation on scroll
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 0) {
-                    $('nav').addClass('shadow-md');
-                } else {
-                    $('nav').removeClass('shadow-md');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
