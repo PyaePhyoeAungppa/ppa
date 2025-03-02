@@ -52,9 +52,10 @@ $(document).ready(function () {
             $('nav').removeClass('shadow-md');
         }
     });
+
+    document.getElementById('speaker-icon').addEventListener('click', function () {
+        var audio = document.getElementById('audio');
+        audio.play();
+    });
 });
 
-document.getElementById('speaker-icon').addEventListener('click', function () {
-    var audio = document.getElementById('audio');
-    audio.play();
-});
