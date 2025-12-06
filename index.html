@@ -1,542 +1,1024 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-<head>
+  <head>
     <!-- Basic Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Senior Web Developer with 7+ years of experience in PHP, Ruby, TypeScript, and JavaScript. Expert in Laravel, Ruby on Rails, React, Angular, and Next.js. Portfolio showcasing web development projects and professional experience.">
-    <meta name="keywords" content="web developer, senior developer, PHP, Ruby, TypeScript, JavaScript, Laravel, Ruby on Rails, React, Angular, Next.js, full stack developer, frontend developer">
-    <meta name="author" content="Pyae Phyo Aung">
-    <meta name="robots" content="index, follow">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Senior Web Developer with 7+ years of experience in PHP, Ruby, TypeScript, and JavaScript. Expert in Laravel, Ruby on Rails, React, Angular, and Next.js. Portfolio showcasing web development projects and professional experience."
+    />
+    <meta
+      name="keywords"
+      content="web developer, senior developer, PHP, Ruby, TypeScript, JavaScript, Laravel, Ruby on Rails, React, Angular, Next.js, full stack developer, frontend developer"
+    />
+    <meta name="author" content="Pyae Phyo Aung" />
+    <meta name="robots" content="index, follow" />
+
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ppa-ten.vercel.app">
-    
+    <link rel="canonical" href="https://ppa-ten.vercel.app" />
+
     <!-- Title -->
-    <title>Pyae Phyo Aung | Senior Web Developer | PHP, JavaScript, TypeScript Expert</title>
-    
+    <title>
+      Pyae Phyo Aung | Senior Web Developer | PHP, JavaScript, TypeScript Expert
+    </title>
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='90'>🖥️</text></svg>">
-    
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='90'>🖥️</text></svg>"
+    />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ppa-ten.vercel.app">
-    <meta property="og:title" content="Pyae Phyo Aung | Senior Web Developer">
-    <meta property="og:description" content="Senior Web Developer with 7+ years of experience specializing in PHP, Ruby, TypeScript, and JavaScript. View my portfolio of web development projects.">
-    <meta property="og:image" content="https://ppa-ten.vercel.app/images/profile-preview.jpg">
-    <meta property="og:site_name" content="Pyae Phyo Aung Portfolio">
-    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ppa-ten.vercel.app" />
+    <meta property="og:title" content="Pyae Phyo Aung | Senior Web Developer" />
+    <meta
+      property="og:description"
+      content="Senior Web Developer with 7+ years of experience specializing in PHP, Ruby, TypeScript, and JavaScript. View my portfolio of web development projects."
+    />
+    <meta
+      property="og:image"
+      content="https://ppa-ten.vercel.app/images/profile-preview.jpg"
+    />
+    <meta property="og:site_name" content="Pyae Phyo Aung Portfolio" />
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ppa-ten.vercel.app">
-    <meta property="twitter:title" content="Pyae Phyo Aung | Senior Web Developer">
-    <meta property="twitter:description" content="Senior Web Developer with 7+ years of experience specializing in PHP, Ruby, TypeScript, and JavaScript. View my portfolio of web development projects.">
-    <meta property="twitter:image" content="https://ppa-ten.vercel.app/images/profile-preview.jpg">
-    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ppa-ten.vercel.app" />
+    <meta
+      property="twitter:title"
+      content="Pyae Phyo Aung | Senior Web Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Senior Web Developer with 7+ years of experience specializing in PHP, Ruby, TypeScript, and JavaScript. View my portfolio of web development projects."
+    />
+    <meta
+      property="twitter:image"
+      content="https://ppa-ten.vercel.app/images/profile-preview.jpg"
+    />
+
     <!-- Preconnect to External Resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="js/main.js" as="script">
-    
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Varela+Round&display=swap" rel="stylesheet"> -->
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Varela+Round&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="css/main.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    tailwind.config = {
-        darkMode: 'class',
+      tailwind.config = {
+        darkMode: "class",
         theme: {
-            extend: {
-                colors: {
-                    primary: '#3b82f6',
-                    secondary: '#10b981'
-                },
-                fontFamily: {
-                    serifDisplay: ['DM Serif Display', 'serif'],
-                    varela: ['Varela Round', 'sans-serif']
-                }
-            }
-        }
-    }
-</script>
-    
-    <!-- Scripts (with defer attribute for performance) -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="js/main.js"></script>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQW4G8232X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-CQW4G8232X');
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              secondary: "#10b981",
+            },
+            fontFamily: {
+              serifDisplay: ["DM Serif Display", "serif"],
+              varela: ["Varela Round", "sans-serif"],
+            },
+            colors: {
+              curiousBlue: "#2092e9",
+            },
+          },
+        },
+      };
     </script>
-</head>
 
+    <!-- Scripts (with defer attribute for performance) -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="js/main.js"></script>
 
-<body class="bg-gray-50 dark:bg-gray-900 transition-colors">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CQW4G8232X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CQW4G8232X");
+    </script>
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-900 transition-colors">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-sm z-50 transition-colors">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="#" class="font-serifDisplay text-xl font-medium text-gray-800 dark:text-white transition-colors">Pyae's Portfolio
-                    Space</a>
-                <div class="flex items-center">
-                    <div class="hidden md:flex space-x-6 mr-6">
-                        <a href="#about"
-                            class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-                        <a href="#experience"
-                            class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
-                        <a href="#skills"
-                            class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
-                        <a href="#contact"
-                            class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
-                    </div>
-                    <!-- Dark/Light Mode Toggle -->
-                    <button id="theme-toggle"
-                        class="p-2 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white focus:outline-none">
-                        <i id="theme-toggle-dark-icon" class="fa-solid fa-moon hidden"></i>
-                        <i id="theme-toggle-light-icon" class="fa-solid fa-sun"></i>
-                    </button>
-                </div>
+    <nav
+      class="fixed w-full bg-white dark:bg-gray-800 shadow-sm z-50 transition-colors"
+    >
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a
+            href="#"
+            class="font-serifDisplay text-xl font-medium text-gray-800 dark:text-white transition-colors"
+            >Pyae's Portfolio Space</a
+          >
+          <div class="flex items-center">
+            <div class="hidden md:flex space-x-6 mr-6">
+              <a
+                href="#about"
+                class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >About</a
+              >
+              <a
+                href="#experience"
+                class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >Experience</a
+              >
+              <a
+                href="#skills"
+                class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >Skills</a
+              >
+              <a
+                href="#contact"
+                class="font-varela text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >Contact</a
+              >
             </div>
+            <!-- Dark/Light Mode Toggle -->
+            <button
+              id="theme-toggle"
+              class="p-2 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white focus:outline-none"
+            >
+              <i
+                id="theme-toggle-dark-icon"
+                class="fa-solid fa-moon hidden"
+              ></i>
+              <i id="theme-toggle-light-icon" class="fa-solid fa-sun"></i>
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section
-        class="pt-20 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
-                <h1 class="font-serifDisplay text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4 transition-colors">
-                    Pyae Phyo Aung
-                    <sup>
-                        <span id="speaker-icon"
-                            class="text-lg cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                            <i class="fas fa-volume-up"></i>
-                        </span>
-                    </sup>
-                </h1>
-                <audio id="audio" src="data/pyaephyoaung.m4a" style="display: none;"></audio>
-                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors">Senior Web Developer</p>
-                <div class="flex justify-center space-x-4 mb-8">
-                    <a href="mailto:work.pyaephyoeaung@gmail.com"
-                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
-                    <a href="https://github.com/PyaePhyoeAungppa" target="_blank"
-                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/pyae-phyo-aung-3a43371aa" target="_blank"
-                        class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                </div>
-                <a href="data/pyaephyoeaung-developer.pdf" download="pyaephyoeaung-developer.pdf"
-                    class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg transition duration-150 ease-in-out">
-                    <i class="fas fa-download mr-2"></i>
-                    Download Resume
-                </a>
-            </div>
+      class="pt-20 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 transition-colors"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1
+            class="font-serifDisplay text-curiousBlue text-4xl md:text-5xl font-bold dark:text-white mb-4 transition-colors"
+          >
+            Pyae Phyo Aung
+            <sup>
+              <span
+                id="speaker-icon"
+                class="text-lg cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              >
+                <i class="fas fa-volume-up"></i>
+              </span>
+            </sup>
+          </h1>
+          <audio
+            id="audio"
+            src="data/pyaephyoaung.m4a"
+            style="display: none"
+          ></audio>
+          <p
+            class="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors"
+          >
+            Senior Web Developer
+          </p>
+          <div class="flex justify-center space-x-4 mb-8">
+            <a
+              href="mailto:work.pyaephyoeaung@gmail.com"
+              class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/PyaePhyoeAungppa"
+              target="_blank"
+              class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/pyae-phyo-aung-3a43371aa"
+              target="_blank"
+              class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+          </div>
+          <a
+            href="data/pyaephyoeaung-developer.pdf"
+            download="pyaephyoeaung-developer.pdf"
+            class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg transition duration-150 ease-in-out"
+          >
+            <i class="fas fa-download mr-2"></i>
+            Download Resume
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white dark:bg-gray-800 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mb-6 transition-colors">About Me</h2>
-                <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                    I'm a Senior Web Developer with 7+ years of experience building scalable and optimized web solutions. I take projects from idea to launch, work well with teams, and use modern frameworks to create smooth, user-friendly experiences.
+    <section
+      id="about"
+      class="py-16 bg-white dark:bg-gray-800 transition-colors"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mb-6 transition-colors"
+          >
+            About Me
+          </h2>
+          <p
+            class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+          >
+            I'm a Senior Web Developer with 7+ years of experience building
+            scalable and optimized web solutions. I take projects from idea to
+            launch, work well with teams, and use modern frameworks to create
+            smooth, user-friendly experiences.
+          </p>
+
+          <h2
+            class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mt-12 mb-6 transition-colors"
+          >
+            What I Value in a Workplace
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex items-start space-x-4">
+              <i class="fas fa-comments text-3xl text-blue-500"></i>
+              <div>
+                <h3
+                  class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                >
+                  Communication
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+                >
+                  Clear communication fosters a productive environment and
+                  minimizes misunderstandings, ensuring smooth collaboration
+                  within a team.
                 </p>
-                
-                <h2 class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mt-12 mb-6 transition-colors">What I Value in a Workplace</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-comments text-3xl text-blue-500"></i>
-                        <div>
-                            <h3 class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors">Communication</h3>
-                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                                Clear communication fosters a productive environment and minimizes misunderstandings, ensuring smooth collaboration within a team.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-users text-3xl text-green-500"></i>
-                        <div>
-                            <h3 class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors">Collaboration</h3>
-                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                                Teamwork is essential for innovation. I thrive in collaborative settings where ideas are shared and refined for the best outcomes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-hand-holding-heart text-3xl text-yellow-500"></i>
-                        <div>
-                            <h3 class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors">Contribution</h3>
-                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                                Making meaningful contributions to projects and helping businesses grow is what drives me. My goal is to add value through my work.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-chart-line text-3xl text-red-500"></i>
-                        <div>
-                            <h3 class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors">Career Growth</h3>
-                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                                A workplace that encourages learning and growth allows me to enhance my skills while contributing effectively to the team’s success.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <h2 class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mt-12 mb-6 transition-colors">Technology-Agnostic Approach</h2>
-                <p class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                    I take a technology-agnostic approach, choosing the best tools for each project rather than sticking to a single tech stack. My focus is always on finding the most efficient and scalable solutions to solve real-world problems.
-                </p>
+              </div>
             </div>
+            <div class="flex items-start space-x-4">
+              <i class="fas fa-users text-3xl text-green-500"></i>
+              <div>
+                <h3
+                  class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                >
+                  Collaboration
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+                >
+                  Teamwork is essential for innovation. I thrive in
+                  collaborative settings where ideas are shared and refined for
+                  the best outcomes.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <i class="fas fa-hand-holding-heart text-3xl text-yellow-500"></i>
+              <div>
+                <h3
+                  class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                >
+                  Contribution
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+                >
+                  Making meaningful contributions to projects and helping
+                  businesses grow is what drives me. My goal is to add value
+                  through my work.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <i class="fas fa-chart-line text-3xl text-red-500"></i>
+              <div>
+                <h3
+                  class="font-serifDisplay text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                >
+                  Career Growth
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+                >
+                  A workplace that encourages learning and growth allows me to
+                  enhance my skills while contributing effectively to the team’s
+                  success.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2
+            class="font-serifDisplay text-3xl font-bold text-gray-800 dark:text-white mt-12 mb-6 transition-colors"
+          >
+            Technology-Agnostic Approach
+          </h2>
+          <p
+            class="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors"
+          >
+            I take a technology-agnostic approach, choosing the best tools for
+            each project rather than sticking to a single tech stack. My focus
+            is always on finding the most efficient and scalable solutions to
+            solve real-world problems.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <!-- Featured Projects Section (Add this after About section) -->
     <section class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Featured Projects
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <a href="https://dhonepyandeliveryservice.com" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Jivi - Functional Testing Redefined</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Functional & Genetic Testing E-commerce platform</p>
-                    </a>
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors"
+          >
+            Featured Projects
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a
+              href="https://dhonepyandeliveryservice.com"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                Jivi - Functional Testing Redefined
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                Functional & Genetic Testing E-commerce platform
+              </p>
+            </a>
 
-                    <a href="https://officepromm.web.app" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Office
-                            Pro</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Mini ERP system for streamlined
-                            business operations</p>
-                    </a>
+            <a
+              href="https://officepromm.web.app"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                Office Pro
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                Mini ERP system for streamlined business operations
+              </p>
+            </a>
 
-                    <a href="https://yinyinkyaw.com" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Yin Yin
-                            Kyaw</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Company Website for Internationl
-                            Trading Company</p>
-                    </a>
+            <a
+              href="https://yinyinkyaw.com"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                Yin Yin Kyaw
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                Company Website for Internationl Trading Company
+              </p>
+            </a>
 
-                    <a href="https://smartsales.asia" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">Smart
-                            Sales</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Advanced POS system with
-                            comprehensive features</p>
-                    </a>
+            <a
+              href="https://smartsales.asia"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                Smart Sales
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                Advanced POS system with comprehensive features
+              </p>
+            </a>
 
-                    <a href="https://mbccentre.com" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">MBC
-                            Centre</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">Comprehensive business management
-                            solution</p>
-                    </a>
+            <a
+              href="https://mbccentre.com"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                MBC Centre
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                Comprehensive business management solution
+              </p>
+            </a>
 
-                    <a href="https://swiftwriter.ai" target="_blank"
-                        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors">
-                            SwiftWriter</h3>
-                        <p class="text-gray-600 dark:text-gray-300 transition-colors">AI-powered content creation
-                            platform</p>
-                    </a>
-
-
-                </div>
-            </div>
+            <a
+              href="https://swiftwriter.ai"
+              target="_blank"
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:shadow-gray-700"
+            >
+              <h3
+                class="text-xl font-semibold text-gray-800 dark:text-white mb-2 transition-colors"
+              >
+                SwiftWriter
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 transition-colors">
+                AI-powered content creation platform
+              </p>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Experience</h2>
-                <div class="space-y-8">
-                    <!-- MedEx -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center space-x-4">
-                                <img src="images/medex.jpg" alt="Growth Automation" class="h-10 w-10 object-contain">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Wordpress Developer</h3>
-                            </div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">June 2025 - Present</span>
-                        </div>
-                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">MedEx | Bangkok, Thailand</h4>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
-                            <li>Developed, maintained and managed multiple ecommerce sites using wordpress, woocommerce</li>
-                            <li>Custom plugin development, API integrations, operation use tools creation</li>
-                            <li><a href="https://jivi.co/" target="_blank">https://jivi.co/</a></li>
-                            <li><a href="https://medex.co.th/" target="_blank">https://medex.co.th/</a></li>
-                            <li><a href="https://medex.co/" target="_blank">https://medex.co/</a></li>
-                            <li><a href="https://medexmart.com" target="_blank">https://medexmart.com</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Growth Automation -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center space-x-4">
-                                <img src="images/growth-automation.png" alt="Growth Automation" class="h-10 w-10 object-contain">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Frontend Developer</h3>
-                            </div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Jan 2024 - Sep 2024</span>
-                        </div>
-                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Growth Automation | Bangkok, Thailand</h4>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
-                            <li>Designed and developed a high-conversion landing page for SwiftWriter with Next.js</li>
-                            <li>Built a sleek, responsive UI for SwiftWriter's AI-powered platform</li>
-                            <li>Integrated backend services smoothly using AWS tools</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Dream Desk -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center space-x-4">
-                                <img src="images/dreamdesk.png" alt="Dream Desk" class="h-10 w-10 object-contain">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Full Stack Developer</h3>
-                            </div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Apr 2021 - Jan 2024</span>
-                        </div>
-                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Dream Desk | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
-                            <li>Designed and implemented Office Pro, a mini ERP system, streamlining sales, purchases, and inventory management</li>
-                            <li>Developed Pickup Pro, a delivery tracking system using Laravel and Angular</li>
-                            <li>Built and optimized websites for logistics and trading companies</li>
-                            <li>Delivered scalable APIs for integration across various business applications</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Code2LAB -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center space-x-4">
-                                <img src="images/code2lab.png" alt="Code2LAB" class="h-10 w-10 object-contain">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Senior Software Developer</h3>
-                            </div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Oct 2021 - Jan 2024</span>
-                        </div>
-                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">Code2LAB | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
-                            <li>Enhanced Smart Sales POS by implementing client-requested features</li>
-                            <li>Upgraded Paymal's cashless payment system, improving campaign functionality</li>
-                            <li>Delivered customized clinic and food court management solutions with Ruby on Rails and React</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- MBCSD -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center space-x-4">
-                                <img src="images/mbcsd.png" alt="MBCSD" class="h-10 w-10 object-contain">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-white transition-colors">Software Developer</h3>
-                            </div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 transition-colors">Jan 2018 - Dec 2020</span>
-                        </div>
-                        <h4 class="text-gray-600 dark:text-gray-300 mb-3 transition-colors">MBCSD | Yangon, Myanmar</h4>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors">
-                            <li>Enhanced ERP capabilities in IAIMS using VB 6</li>
-                            <li>Developed POS systems for retail and petroleum sectors</li>
-                            <li>Built task and KPI management features for workflow optimization</li>
-                            <li>Contributed to web development projects using Angular and Laravel</li>
-                        </ul>
-                    </div>
+    <section
+      id="experience"
+      class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors"
+          >
+            Experience
+          </h2>
+          <div class="space-y-8">
+            <!-- MedEx -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="images/medex.jpg"
+                    alt="Growth Automation"
+                    class="h-10 w-10 object-contain"
+                  />
+                  <h3
+                    class="text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                  >
+                    Wordpress Developer
+                  </h3>
                 </div>
+                <span
+                  class="text-sm text-gray-500 dark:text-gray-400 transition-colors"
+                  >June 2025 - Present</span
+                >
+              </div>
+              <h4
+                class="text-gray-600 dark:text-gray-300 mb-3 transition-colors"
+              >
+                MedEx | Bangkok, Thailand
+              </h4>
+              <ul
+                class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors"
+              >
+                <li>
+                  Developed, maintained and managed multiple ecommerce sites
+                  using wordpress, woocommerce
+                </li>
+                <li>
+                  Custom plugin development, API integrations, operation use
+                  tools creation
+                </li>
+                <li>
+                  <a href="https://jivi.co/" target="_blank"
+                    >https://jivi.co/</a
+                  >
+                </li>
+                <li>
+                  <a href="https://medex.co.th/" target="_blank"
+                    >https://medex.co.th/</a
+                  >
+                </li>
+                <li>
+                  <a href="https://medex.co/" target="_blank"
+                    >https://medex.co/</a
+                  >
+                </li>
+                <li>
+                  <a href="https://medexmart.com" target="_blank"
+                    >https://medexmart.com</a
+                  >
+                </li>
+              </ul>
             </div>
+
+            <!-- Growth Automation -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="images/growth-automation.png"
+                    alt="Growth Automation"
+                    class="h-10 w-10 object-contain"
+                  />
+                  <h3
+                    class="text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                  >
+                    Frontend Developer
+                  </h3>
+                </div>
+                <span
+                  class="text-sm text-gray-500 dark:text-gray-400 transition-colors"
+                  >Jan 2024 - Sep 2024</span
+                >
+              </div>
+              <h4
+                class="text-gray-600 dark:text-gray-300 mb-3 transition-colors"
+              >
+                Growth Automation | Bangkok, Thailand
+              </h4>
+              <ul
+                class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors"
+              >
+                <li>
+                  Designed and developed a high-conversion landing page for
+                  SwiftWriter with Next.js
+                </li>
+                <li>
+                  Built a sleek, responsive UI for SwiftWriter's AI-powered
+                  platform
+                </li>
+                <li>Integrated backend services smoothly using AWS tools</li>
+              </ul>
+            </div>
+
+            <!-- Dream Desk -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="images/dreamdesk.png"
+                    alt="Dream Desk"
+                    class="h-10 w-10 object-contain"
+                  />
+                  <h3
+                    class="text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                  >
+                    Full Stack Developer
+                  </h3>
+                </div>
+                <span
+                  class="text-sm text-gray-500 dark:text-gray-400 transition-colors"
+                  >Apr 2021 - Jan 2024</span
+                >
+              </div>
+              <h4
+                class="text-gray-600 dark:text-gray-300 mb-3 transition-colors"
+              >
+                Dream Desk | Yangon, Myanmar
+              </h4>
+              <ul
+                class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors"
+              >
+                <li>
+                  Designed and implemented Office Pro, a mini ERP system,
+                  streamlining sales, purchases, and inventory management
+                </li>
+                <li>
+                  Developed Pickup Pro, a delivery tracking system using Laravel
+                  and Angular
+                </li>
+                <li>
+                  Built and optimized websites for logistics and trading
+                  companies
+                </li>
+                <li>
+                  Delivered scalable APIs for integration across various
+                  business applications
+                </li>
+              </ul>
+            </div>
+
+            <!-- Code2LAB -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="images/code2lab.png"
+                    alt="Code2LAB"
+                    class="h-10 w-10 object-contain"
+                  />
+                  <h3
+                    class="text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                  >
+                    Senior Software Developer
+                  </h3>
+                </div>
+                <span
+                  class="text-sm text-gray-500 dark:text-gray-400 transition-colors"
+                  >Oct 2021 - Jan 2024</span
+                >
+              </div>
+              <h4
+                class="text-gray-600 dark:text-gray-300 mb-3 transition-colors"
+              >
+                Code2LAB | Yangon, Myanmar
+              </h4>
+              <ul
+                class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors"
+              >
+                <li>
+                  Enhanced Smart Sales POS by implementing client-requested
+                  features
+                </li>
+                <li>
+                  Upgraded Paymal's cashless payment system, improving campaign
+                  functionality
+                </li>
+                <li>
+                  Delivered customized clinic and food court management
+                  solutions with Ruby on Rails and React
+                </li>
+              </ul>
+            </div>
+
+            <!-- MBCSD -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm dark:shadow-gray-700"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="images/mbcsd.png"
+                    alt="MBCSD"
+                    class="h-10 w-10 object-contain"
+                  />
+                  <h3
+                    class="text-xl font-semibold text-gray-800 dark:text-white transition-colors"
+                  >
+                    Software Developer
+                  </h3>
+                </div>
+                <span
+                  class="text-sm text-gray-500 dark:text-gray-400 transition-colors"
+                  >Jan 2018 - Dec 2020</span
+                >
+              </div>
+              <h4
+                class="text-gray-600 dark:text-gray-300 mb-3 transition-colors"
+              >
+                MBCSD | Yangon, Myanmar
+              </h4>
+              <ul
+                class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 transition-colors"
+              >
+                <li>Enhanced ERP capabilities in IAIMS using VB 6</li>
+                <li>Developed POS systems for retail and petroleum sectors</li>
+                <li>
+                  Built task and KPI management features for workflow
+                  optimization
+                </li>
+                <li>
+                  Contributed to web development projects using Angular and
+                  Laravel
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-white dark:bg-gray-800 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Technical Skills
-                </h2>
+    <section
+      id="skills"
+      class="py-16 bg-white dark:bg-gray-800 transition-colors"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors"
+          >
+            Technical Skills
+          </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Languages -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Languages
-                        </h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fab fa-php text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">PHP</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-gem text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Ruby</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-js text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span
-                                    class="text-gray-600 dark:text-gray-300 transition-colors">JavaScript/TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Frameworks -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">
-                            Frameworks</h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fab fa-wordpress text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Wordpress</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-laravel text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Laravel</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-train text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Ruby on Rails</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-react text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">React, Next.js</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-bootstrap text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Bootstrap, Tailwind
-                                    CSS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Databases -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Databases
-                        </h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">MySQL</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">PostgreSQL</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-database text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">SQLite</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Tools
-                        </h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fab fa-github text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">GitHub, GitLab</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-pencil-alt text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Figma</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Other Skills -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Other
-                            Skills</h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fas fa-bolt text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Node.js</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-code text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">jQuery, AJAX</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-tools text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">ChatGPT, Claude,
-                                    Gemini, Meta</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Operating Systems -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors">Operating
-                            Systems</h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fab fa-windows text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Windows</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fab fa-linux text-gray-400 dark:text-gray-500 w-8"></i>
-                                <span class="text-gray-600 dark:text-gray-300 transition-colors">Linux</span>
-                            </div>
-                        </div>
-                    </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Languages -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Languages
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-php text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >PHP</span
+                  >
                 </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-gem text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Ruby</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i class="fab fa-js text-gray-400 dark:text-gray-500 w-8"></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >JavaScript/TypeScript</span
+                  >
+                </div>
+              </div>
             </div>
+
+            <!-- Frameworks -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Frameworks
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-wordpress text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Wordpress</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-laravel text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Laravel</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-train text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Ruby on Rails</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-react text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >React, Next.js</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-bootstrap text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Bootstrap, Tailwind CSS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Databases
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-database text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >MySQL</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-database text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >PostgreSQL</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-database text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >SQLite</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Tools
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-github text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >GitHub, GitLab</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-pencil-alt text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Figma</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Skills -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Other Skills
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-bolt text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Node.js</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-code text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >jQuery, AJAX</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fas fa-tools text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >ChatGPT, Claude, Gemini, Meta</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Systems -->
+            <div>
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-white mb-4 transition-colors"
+              >
+                Operating Systems
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-windows text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Windows</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <i
+                    class="fab fa-linux text-gray-400 dark:text-gray-500 w-8"
+                  ></i>
+                  <span
+                    class="text-gray-600 dark:text-gray-300 transition-colors"
+                    >Linux</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors">Get in Touch</h2>
-                <div class="space-y-4">
-                    <p class="text-gray-600 dark:text-gray-300 transition-colors">
-                        <i class="fas fa-envelope mr-2"></i>
-                        <a href="mailto:work.pyaephyoeaung@gmail.com"
-                            class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">work.pyaephyoeaung@gmail.com</a>
-                    </p>
-                    <p class="text-gray-600 dark:text-gray-300 transition-colors">
-                        <i class="fas fa-phone mr-2"></i>
-                        <a href="tel:+66811128174"
-                            class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">+66 811 128 174</a>
-                    </p>
-                </div>
-            </div>
+    <section
+      id="contact"
+      class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2
+            class="text-3xl font-bold text-gray-800 dark:text-white mb-8 transition-colors"
+          >
+            Get in Touch
+          </h2>
+          <div class="space-y-4">
+            <p class="text-gray-600 dark:text-gray-300 transition-colors">
+              <i class="fas fa-envelope mr-2"></i>
+              <a
+                href="mailto:work.pyaephyoeaung@gmail.com"
+                class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >work.pyaephyoeaung@gmail.com</a
+              >
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 transition-colors">
+              <i class="fas fa-phone mr-2"></i>
+              <a
+                href="tel:+66811128174"
+                class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >+66 811 128 174</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 bg-gray-800 dark:bg-gray-900 text-gray-400 dark:text-gray-500 transition-colors">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 Pyae Phyo Aung. All rights reserved.</p>
-        </div>
+    <footer
+      class="py-8 bg-gray-800 dark:bg-gray-900 text-gray-400 dark:text-gray-500 transition-colors"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Pyae Phyo Aung. All rights reserved.</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
